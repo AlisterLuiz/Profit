@@ -59,6 +59,7 @@ export 'package:Profit/screens/portrait/mobile/login/signUp.dart';
 export 'package:Profit/screens/portrait/mobile/login/forgotPassword.dart';
 export 'package:Profit/screens/portrait/mobile/transactions.dart';
 export 'package:Profit/screens/portrait/mobile/goals.dart';
+export 'package:Profit/screens/portrait/mobile/profile.dart';
 
 // Services
 
