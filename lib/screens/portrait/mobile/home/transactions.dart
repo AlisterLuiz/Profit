@@ -11,6 +11,12 @@ class _TransactionsState extends State<Transactions> {
   int currentSort = 0;
   List sortByCash = ['\$75.00', '\$463.50', '\$2,250.00', '\$2,400'];
   List sortByTitle = ['Yesterday', 'Last Week', 'January', '2021'];
+  List listView = [
+    [Color(0xffDAFFEF), 'assets/images/console.png', 'Entertainment', '-\$850'],
+    [Color(0xffFFEADA), 'assets/images/trolley.png', 'Food', '-\$400'],
+    [Color(0xffE8E8E8), 'assets/images/car.png', 'Transport', '-\$250'],
+    [Color(0xffE4F0FF), 'assets/images/plane.png', 'Travel', '-\$750']
+  ];
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -100,7 +106,7 @@ class _TransactionsState extends State<Transactions> {
                           Text(
                             'Spent',
                             style: TextStyle(
-                              color: Colors.red,
+                              color: Color(0xffF47090),
                               fontSize: 17,
                               fontWeight: FontWeight.w700,
                             ),
@@ -108,7 +114,7 @@ class _TransactionsState extends State<Transactions> {
                           Text(
                             '\$2500.00',
                             style: TextStyle(
-                              color: Colors.red,
+                              color: Color(0xffF47090),
                               fontSize: 22,
                               fontWeight: FontWeight.w800,
                             ),
@@ -231,48 +237,99 @@ class _TransactionsState extends State<Transactions> {
                       ],
                     ),
                     sizedBox(10, 0),
-                    Container(
-                      height: 55,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).cardColor,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(3),
-                                  bottomLeft: Radius.circular(3),
+                    ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: listView.length,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            margin: EdgeInsets.only(
+                              right: 5,
+                              bottom: 10,
+                              top: 10,
+                            ),
+                            height: 55,
+                            decoration: BoxDecoration(
+                              color: Theme.of(context).cardColor,
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  children: [
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(3),
+                                        bottomLeft: Radius.circular(3),
+                                      ),
+                                      child: Container(
+                                        height: 55,
+                                        width: 54,
+                                        decoration: BoxDecoration(
+                                          //background color of box
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Color(0xff000000),
+                                              blurRadius:
+                                                  4.0, // soften the shadow
+                                              spreadRadius:
+                                                  0.0, //extend the shadow
+                                              offset: Offset(
+                                                0.0, // Move to right 10  horizontally
+                                                4, // Move to bottom 10 Vertically
+                                              ),
+                                            ),
+                                          ],
+                                          color: listView[index][0],
+                                        ),
+                                        child: Image.asset(
+                                          listView[index][1],
+                                        ),
+                                      ),
+                                    ),
+                                    sizedBox(0, 10),
+                                    Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        AutoSizeText(
+                                          listView[index][2],
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            color: Color(0xff243656),
+                                            fontWeight: FontWeight.w700,
+                                          ),
+                                          maxLines: 1,
+                                        ),
+                                        sizedBox(2, 0),
+                                        AutoSizeText(
+                                          'January 2021',
+                                          style: TextStyle(
+                                            color: Color(0xff243656),
+                                            fontSize: 12,
+                                            // fontWeight: FontWeight.w700,
+                                          ),
+                                          maxLines: 1,
+                                        ),
+                                      ],
+                                    ),
+                                  ],
                                 ),
-                                child: Container(
-                                  height: 55,
-                                  width: 54,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xffDAFFEF),
+                                Text(
+                                  listView[index][3],
+                                  style: TextStyle(
+                                    color: Color(0xffF47090),
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w600,
                                   ),
-                                  child: Image.asset(
-                                    'assets/images/console.png',
-                                  ),
                                 ),
-                              ),
-                              sizedBox(5,0),
-                              AutoSizeText(
-                                'Text',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                                maxLines: 1,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
+                              ],
+                            ),
+                          );
+                        }),
                   ],
                 ),
               ),
