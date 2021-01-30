@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 class BodyContainer extends StatelessWidget {
   final Widget child;
@@ -20,7 +20,7 @@ class BodyContainer extends StatelessWidget {
         color: Theme.of(context).backgroundColor,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(25),
-          topRight: Radius.circular(25),
+          // topRight: Radius.circular(25),
         ),
       ),
       child: child,

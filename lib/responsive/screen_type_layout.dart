@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 class ScreenTypeLayout extends StatelessWidget {
   final Widget mobile;

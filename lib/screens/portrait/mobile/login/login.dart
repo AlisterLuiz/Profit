@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -15,7 +15,31 @@ class LoginPage extends StatelessWidget {
           automaticallyImplyLeading: false,
           backgroundColor: Theme.of(context).accentColor,
           titleSpacing: 25,
-          title: kappBarText,
+          title: RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                TextSpan(
+                  text: 'pro',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+                TextSpan(
+                  text: 'fit',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 20,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+              ],
+            ),
+          ),
+
           flexibleSpace: FlexibleSpaceBar(
             titlePadding: EdgeInsets.only(
               top: 126,

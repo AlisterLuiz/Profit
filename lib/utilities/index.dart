@@ -7,6 +7,9 @@ export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 export 'package:shimmer/shimmer.dart';
 export 'package:expand_widget/expand_widget.dart';
+export 'package:flutter_svg/flutter_svg.dart';
+export 'package:fl_chart/fl_chart.dart';
+export 'package:auto_size_text/auto_size_text.dart';
 
 // Dart Packages
 export 'dart:io';
@@ -14,48 +17,49 @@ export 'dart:io';
 // Firebase
 
 // Models
-export 'package:financial_app/models/themeModel.dart';
-export 'package:financial_app/models/homeViewModel.dart';
+export 'package:Profit/models/themeModel.dart';
+export 'package:Profit/models/homeViewModel.dart';
 
 //Utilities
-export 'package:financial_app/utilities/routes.dart';
-export 'package:financial_app/utilities/screenSize.dart';
-export 'package:financial_app/utilities/constants.dart';
-export 'package:financial_app/utilities/uiUtilities.dart';
-export 'package:financial_app/utilities/theme.dart';
-export 'package:financial_app/widgets/common/sizedBox.dart';
+export 'package:Profit/utilities/routes.dart';
+export 'package:Profit/utilities/screenSize.dart';
+export 'package:Profit/utilities/constants.dart';
+export 'package:Profit/utilities/uiUtilities.dart';
+export 'package:Profit/utilities/theme.dart';
+export 'package:Profit/widgets/common/sizedBox.dart';
 
 //Widgets
-export 'package:financial_app/widgets/baseWidget.dart';
-export 'package:financial_app/widgets/common/bodyContainer.dart';
-export 'package:financial_app/widgets/common/textField.dart';
-export 'package:financial_app/widgets/common/buttonWidget.dart';
+export 'package:Profit/widgets/baseWidget.dart';
+export 'package:Profit/widgets/common/bodyContainer.dart';
+export 'package:Profit/widgets/common/textField.dart';
+export 'package:Profit/widgets/common/buttonWidget.dart';
+export 'package:Profit/widgets/indicator.dart';
 
 // Responsive
-export 'package:financial_app/enums/device_screen_type.dart';
-export 'package:financial_app/responsive/responsive_builder.dart';
-export 'package:financial_app/responsive/sizing_information.dart';
-export 'package:financial_app/responsive/orientation_layout.dart';
-export 'package:financial_app/responsive/screen_type_layout.dart';
+export 'package:Profit/enums/device_screen_type.dart';
+export 'package:Profit/responsive/responsive_builder.dart';
+export 'package:Profit/responsive/sizing_information.dart';
+export 'package:Profit/responsive/orientation_layout.dart';
+export 'package:Profit/responsive/screen_type_layout.dart';
 
 // HomeView
-export 'package:financial_app/screens/homeView.dart';
+export 'package:Profit/screens/homeView.dart';
 
 // Landscape for Tablet and Phone
-export 'package:financial_app/screens/landscape/desktop/navigationBarDesktopLandscape.dart';
-export 'package:financial_app/screens/landscape/mobile/navigationBarMobileLandscape.dart';
-export 'package:financial_app/screens/landscape/tablet/navigationBarTabletLandscape.dart';
+export 'package:Profit/screens/landscape/desktop/navigationBarDesktopLandscape.dart';
+export 'package:Profit/screens/landscape/mobile/navigationBarMobileLandscape.dart';
+export 'package:Profit/screens/landscape/tablet/navigationBarTabletLandscape.dart';
 
 // Portrait for Tablet and Phone
-export 'package:financial_app/screens/portrait/desktop/navigationBarDesktopPortrait.dart';
-export 'package:financial_app/screens/portrait/mobile/navigationBarMobilePortait.dart';
-export 'package:financial_app/screens/portrait/tablet/navigationBarTabletPortrait.dart';
-export 'package:financial_app/screens/portrait/mobile/login/login.dart';
-export 'package:financial_app/screens/portrait/mobile/login/signUp.dart';
-export 'package:financial_app/screens/portrait/mobile/login/forgotPassword.dart';
-export 'package:financial_app/screens/portrait/mobile/home/home.dart';
+export 'package:Profit/screens/portrait/desktop/navigationBarDesktopPortrait.dart';
+export 'package:Profit/screens/portrait/mobile/navigationBarMobilePortait.dart';
+export 'package:Profit/screens/portrait/tablet/navigationBarTabletPortrait.dart';
+export 'package:Profit/screens/portrait/mobile/login/login.dart';
+export 'package:Profit/screens/portrait/mobile/login/signUp.dart';
+export 'package:Profit/screens/portrait/mobile/login/forgotPassword.dart';
+export 'package:Profit/screens/portrait/mobile/home/transactions.dart';
 
 // Services
 
 // Providers
-export 'package:financial_app/providers/currentIndexProvider.dart';
+export 'package:Profit/providers/currentIndexProvider.dart';

@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'financial_app',
+      title: 'Profit',
       theme: Provider.of<ThemeModel>(context).currentTheme,
       initialRoute: Routes.login,
       routes: Routes.routes,

@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 const kNavigationBarTextStyle = TextStyle(
   fontSize: 11.5,
@@ -18,7 +18,7 @@ const konboardingtextdecoration = InputDecoration(
 );
 
 var kappBarText = Text(
-  'financial_app',
+  'Profit',
   style: TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w700,

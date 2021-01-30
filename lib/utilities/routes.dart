@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 class Routes {
   Routes._();
@@ -16,7 +16,7 @@ class Routes {
     login: (BuildContext context) => LoginPage(),
     signUp: (BuildContext context) => SignUpPage(),
     forgotPassword: (BuildContext context) => ForgotPasswordPage(),
-    home: (BuildContext context) => Home(),
+    home: (BuildContext context) => Transactions(),
 
   };
 }

@@ -1,4 +1,4 @@
-import 'package:financial_app/utilities/index.dart';
+import 'package:Profit/utilities/index.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -34,7 +34,7 @@ class SignUpPage extends StatelessWidget {
                 ),
                 sizedBox(15, 0),
                 Text(
-                  'Join financial_app',
+                  'Join Profit',
                   style: TextStyle(
                     color: Theme.of(context).backgroundColor,
                     fontSize: 24,
