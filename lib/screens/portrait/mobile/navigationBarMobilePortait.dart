@@ -30,7 +30,7 @@ class _NavigationBarMobilePortraitState
             boxShadow: <BoxShadow>[
               BoxShadow(
                 color: Theme.of(context).accentColor.withOpacity(0.25),
-                blurRadius: 50,
+                blurRadius: 4,
                 spreadRadius: 0,
                 offset: Offset(0.0, 0.0),
               )

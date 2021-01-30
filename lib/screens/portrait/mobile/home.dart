@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
             ),
             child: Padding(
               padding: const EdgeInsets.only(
-                top: 50.0,
+                top: 10.0,
                 left: 20.0,
                 right: 20.0,
               ),
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
           ),
           Container(
             margin: EdgeInsets.only(
-              top: 160,
+              top: 90,
             ),
             height: double.infinity,
             width: double.infinity,
@@ -101,7 +101,7 @@ class _HomeState extends State<Home> {
                 child: Column(
                   children: [
                     Container(
-                      height: 169,
+                      height: 159,
                       padding: EdgeInsets.all(20),
                       width: screenWidth(context),
                       decoration: BoxDecoration(
@@ -109,7 +109,7 @@ class _HomeState extends State<Home> {
                           BoxShadow(
                             color:
                                 Theme.of(context).accentColor.withOpacity(0.25),
-                            blurRadius: 50,
+                            blurRadius: 4,
                             spreadRadius: 0,
                             offset: Offset(0.0, 0.0),
                           )
@@ -144,7 +144,7 @@ class _HomeState extends State<Home> {
                           BoxShadow(
                             color:
                                 Theme.of(context).accentColor.withOpacity(0.25),
-                            blurRadius: 50,
+                            blurRadius: 4,
                             spreadRadius: 0,
                             offset: Offset(0.0, 0.0),
                           )
@@ -206,7 +206,7 @@ class _HomeState extends State<Home> {
                     ),
                     sizedBox(15, 0),
                     Container(
-                      height: 169,
+                      height: 159,
                       padding: EdgeInsets.all(20),
                       width: screenWidth(context),
                       decoration: BoxDecoration(
@@ -214,7 +214,7 @@ class _HomeState extends State<Home> {
                           BoxShadow(
                             color:
                                 Theme.of(context).accentColor.withOpacity(0.25),
-                            blurRadius: 50,
+                            blurRadius: 4,
                             spreadRadius: 0,
                             offset: Offset(0.0, 0.0),
                           )
