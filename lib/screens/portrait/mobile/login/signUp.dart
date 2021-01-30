@@ -15,7 +15,30 @@ class SignUpPage extends StatelessWidget {
           automaticallyImplyLeading: false,
           backgroundColor: Theme.of(context).accentColor,
           titleSpacing: 25,
-          title: kappBarText,
+          title: RichText(
+            text: TextSpan(
+              children: <TextSpan>[
+                TextSpan(
+                  text: 'pro',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+                TextSpan(
+                  text: 'fit',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 20,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+              ],
+            ),
+          ),
           flexibleSpace: FlexibleSpaceBar(
             titlePadding: EdgeInsets.only(
               top: 126,
@@ -74,10 +97,12 @@ class SignUpPage extends StatelessWidget {
                   ),
                   TextFieldWidget(
                     hintText: 'Password',
+                    obscureText: true,
                     onTap: () {},
                   ),
                   TextFieldWidget(
                     hintText: 'Confirm Password',
+                    obscureText: true,
                     onTap: () {},
                   ),
                   sizedBox(25, 0),
@@ -120,7 +145,9 @@ class SignUpPage extends StatelessWidget {
                   ButtonWidget(
                     text: 'SIGN UP',
                     height: 50,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, '/carousel');
+                    },
                   ),
                 ],
               ),

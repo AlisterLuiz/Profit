@@ -20,12 +20,23 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Profit',
-      theme: Provider.of<ThemeModel>(context).currentTheme,
-      initialRoute: Routes.login,
-      routes: Routes.routes,
-      debugShowCheckedModeBanner: false,
+    return ScrollConfiguration(
+      behavior: MyBehavior(),
+      child: MaterialApp(
+        title: 'Profit',
+        theme: Provider.of<ThemeModel>(context).currentTheme,
+        initialRoute: Routes.login,
+        routes: Routes.routes,
+        debugShowCheckedModeBanner: false,
+      ),
     );
+  }
+}
+
+class MyBehavior extends ScrollBehavior {
+  @override
+  Widget buildViewportChrome(
+      BuildContext context, Widget child, AxisDirection axisDirection) {
+    return child;
   }
 }

@@ -61,6 +61,7 @@ export 'package:Profit/screens/portrait/mobile/transactions.dart';
 export 'package:Profit/screens/portrait/mobile/goals.dart';
 export 'package:Profit/screens/portrait/mobile/profile.dart';
 export 'package:Profit/screens/portrait/mobile/home.dart';
+export 'package:Profit/screens/portrait/mobile/carousel.dart';
 
 // Services
 

@@ -3,16 +3,18 @@ import 'package:Profit/utilities/index.dart';
 class TextFieldWidget extends StatelessWidget {
   final String hintText;
   final Function onTap;
-
+  final bool obscureText;
   TextFieldWidget({
     Key key,
     this.hintText,
     this.onTap,
+    this.obscureText,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      obscureText: (obscureText == null) ? false : true,
       style: TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w600,

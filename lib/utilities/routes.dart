@@ -9,6 +9,7 @@ class Routes {
   static const String signUp = '/signUp';
   static const String forgotPassword = '/forgotPassword';
   static const String home = '/home';
+  static const String carousel = '/carousel';
 
   // Routes to each page
   static final routes = <String, WidgetBuilder>{
@@ -17,6 +18,6 @@ class Routes {
     signUp: (BuildContext context) => SignUpPage(),
     forgotPassword: (BuildContext context) => ForgotPasswordPage(),
     home: (BuildContext context) => Transactions(),
-
+    carousel: (BuildContext context) => Carousel(),
   };
 }
