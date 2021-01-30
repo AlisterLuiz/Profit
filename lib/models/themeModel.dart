@@ -22,4 +22,11 @@ class ThemeModel extends ChangeNotifier {
       return notifyListeners();
     }
   }
+
+  bool getTheme() {
+    if (currentTheme == darkTheme)
+      return true;
+    else
+      return false;
+  }
 }
