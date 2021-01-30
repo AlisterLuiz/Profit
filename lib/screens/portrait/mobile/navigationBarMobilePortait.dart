@@ -12,7 +12,7 @@ class _NavigationBarMobilePortraitState
   Widget build(BuildContext context) {
     final currentIndex = Provider.of<CurrentIndexProvider>(context);
     final List<Widget> _children = [
-      Transactions(), Transactions(), Goals(), Profile(),
+      Home(), Transactions(), Goals(), Profile(),
       // Challenges(),
       // Upload(),
       // Notification(),

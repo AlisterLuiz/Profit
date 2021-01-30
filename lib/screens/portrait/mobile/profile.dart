@@ -7,14 +7,6 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  List sortBy = ['Day', 'Week', 'Month', 'Year'];
-  int currentSort = 0;
-  List gridView = [
-    ['\$499', '01/02/21', 'assets/images/console.png', 'Xbox Series X'],
-    ['\$70', '15/02/21', 'assets/images/present.png', 'Mom’s Gift'],
-    ['\$150', '07/02/21', 'assets/images/bicycle.png', 'Buy a Bicycle'],
-    ['\$280', '15/02/21', 'assets/images/graduate.png', 'College Debts'],
-  ];
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
