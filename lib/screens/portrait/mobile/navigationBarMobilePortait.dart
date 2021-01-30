@@ -12,7 +12,7 @@ class _NavigationBarMobilePortraitState
   Widget build(BuildContext context) {
     final currentIndex = Provider.of<CurrentIndexProvider>(context);
     final List<Widget> _children = [
-      Transactions(), Transactions(), Transactions(), Transactions(),
+      Transactions(), Transactions(), Goals(), Transactions(),
       // Challenges(),
       // Upload(),
       // Notification(),
@@ -78,7 +78,7 @@ class _NavigationBarMobilePortraitState
                 BottomNavigationBarItem(
                   icon: Image.asset(
                     'assets/images/award.png',
-                    color: (currentIndex.getIndex() == 0)
+                    color: (currentIndex.getIndex() != 2)
                         ? Theme.of(context).primaryColor
                         : Color(0xff2925F4),
                   ),

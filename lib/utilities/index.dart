@@ -57,7 +57,8 @@ export 'package:Profit/screens/portrait/tablet/navigationBarTabletPortrait.dart'
 export 'package:Profit/screens/portrait/mobile/login/login.dart';
 export 'package:Profit/screens/portrait/mobile/login/signUp.dart';
 export 'package:Profit/screens/portrait/mobile/login/forgotPassword.dart';
-export 'package:Profit/screens/portrait/mobile/home/transactions.dart';
+export 'package:Profit/screens/portrait/mobile/transactions.dart';
+export 'package:Profit/screens/portrait/mobile/goals.dart';
 
 // Services
 
