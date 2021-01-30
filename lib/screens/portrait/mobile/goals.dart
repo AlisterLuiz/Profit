@@ -189,8 +189,8 @@ class _GoalsState extends State<Goals> {
                       child: Text(
                         '\$292.25',
                         style: TextStyle(
-                          fontWeight: FontWeight.w700,
                           fontSize: 25,
+                          fontWeight: FontWeight.w800,
                           color: Color(0xffF47090),
                         ),
                       ),
