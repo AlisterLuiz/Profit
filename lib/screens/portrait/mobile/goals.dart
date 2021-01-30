@@ -198,6 +198,7 @@ class _GoalsState extends State<Goals> {
                     sizedBox(10, 0),
                     GridView.builder(
                         shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
                         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                           maxCrossAxisExtent: 200,
                           childAspectRatio: screenHeight(context) *
@@ -257,7 +258,7 @@ class _GoalsState extends State<Goals> {
                                       Text(
                                         gridView[index][3],
                                         style: TextStyle(
-                                          fontSize: 18,
+                                          fontSize: 17,
                                           color: Theme.of(context).accentColor,
                                         ),
                                       ),
@@ -268,6 +269,7 @@ class _GoalsState extends State<Goals> {
                             ),
                           );
                         }),
+                    sizedBox(10, 0),
                   ],
                 ),
               ),

@@ -238,6 +238,7 @@ class _TransactionsState extends State<Transactions> {
                     ),
                     sizedBox(10, 0),
                     ListView.builder(
+                        physics: NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         itemCount: listView.length,
                         itemBuilder: (context, index) {
